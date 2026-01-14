@@ -9,7 +9,7 @@
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background:#0f0f0f;
+  background:#0b141a;
   color:white;
   text-align:center;
 }
@@ -19,26 +19,37 @@ body{
   padding:30px 20px;
 }
 h1{
-  color:#00ffcc;
+  color:#25D366;
   letter-spacing:2px;
 }
 p{
   font-size:14px;
   line-height:1.6;
 }
-a{
-  display:block;
+a, button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
   margin:12px 0;
   padding:16px;
-  background:#1c1c1c;
+  background:#1f2c34;
   color:white;
   text-decoration:none;
   border-radius:14px;
   font-weight:bold;
+  border:none;
+  cursor:pointer;
 }
-a:hover{
-  background:#00ffcc;
+a:hover, button:hover{
+  background:#25D366;
   color:black;
+}
+.icon{
+  font-size:18px;
+}
+.copy{
+  background:#128C7E;
 }
 .footer{
   margin-top:20px;
@@ -49,6 +60,7 @@ a:hover{
 </head>
 <body>
 <div class="container">
+
 <h1>FUNGSIONALS</h1>
 <p>
 JB Free Fire<br>
@@ -56,17 +68,50 @@ Jual Beli DL Growtopia<br>
 Fast Respon | Open 24 Jam
 </p>
 
-<a href="https://wa.me/6285165573692">ORDER JB FF & DL GT (FAST RESPON)</a>
-<a href="https://chat.whatsapp.com/HX12wynb1aA1pfMbbdf4Vq">GRUP WHATSAPP RESMI FUNGSIONALS</a>
-<a href="https://t.me/fungsionals">CHAT TELEGRAM ADMIN</a>
-<a href="https://t.me/fungsionalshop">GRUP TELEGRAM JB & DL</a>
-<a href="https://instagram.com/fungsionals">INSTAGRAM TOKO RESMI</a>
-<a href="https://tiktok.com/@fungsionals">TIKTOK FUNGSIONALS STORE</a>
-<a href="https://youtube.com/@fungsionals">YOUTUBE FUNGSIONALS STORE</a>
+<a href="https://wa.me/6285165573692?text=Halo%20admin%20Fungsionals%2C%20saya%20ingin%20order">
+<span class="icon">📲</span> ORDER JB FF & DL GT (FAST RESPON)
+</a>
+
+<button class="copy" onclick="copyWA()">
+<span class="icon">📋</span> SALIN NOMOR WHATSAPP
+</button>
+
+<a href="https://chat.whatsapp.com/HX12wynb1aA1pfMbbdf4Vq">
+<span class="icon">👥</span> GRUP WHATSAPP RESMI FUNGSIONALS
+</a>
+
+<a href="https://t.me/fungsionals">
+<span class="icon">✈️</span> CHAT TELEGRAM ADMIN
+</a>
+
+<a href="https://t.me/fungsionalshop">
+<span class="icon">👥</span> GRUP TELEGRAM JB & DL
+</a>
+
+<a href="https://instagram.com/fungsionals">
+<span class="icon">📸</span> INSTAGRAM TOKO RESMI
+</a>
+
+<a href="https://tiktok.com/@fungsionals">
+<span class="icon">🎵</span> TIKTOK FUNGSIONALS STORE
+</a>
+
+<a href="https://youtube.com/@fungsionals">
+<span class="icon">▶️</span> YOUTUBE FUNGSIONALS STORE
+</a>
 
 <div class="footer">
 © Fungsionals Store
 </div>
+
 </div>
+
+<script>
+function copyWA() {
+  navigator.clipboard.writeText("6285165573692");
+  alert("Nomor WhatsApp berhasil disalin!");
+}
+</script>
+
 </body>
 </html>
